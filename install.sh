@@ -87,6 +87,21 @@ for ITEM in "${CONFIGS[@]}"; do
     echo -e "${GREEN}✅ $ITEM vinculado con symlink.${NC}"
 done
 
+# Instalar wallpaper personalizado
+echo ""
+echo -e "${GREEN}🖼️ Instalando fondo de pantalla personalizado...${NC}"
+
+WALL_SRC="$REPO_DIR/.config/wallpapers/1353199.png"
+WALL_DEST="/usr/share/endeavouros/backgrounds/1353199.png"
+
+if [ -f "$WALL_SRC" ]; then
+    echo "→ Copiando $WALL_SRC a $WALL_DEST"
+    sudo cp "$WALL_SRC" "$WALL_DEST"
+    echo -e "${GREEN}✔️  Wallpaper instalado correctamente.${NC}"
+else
+    echo -e "${YELLOW}⚠️  No se encontró el archivo: $WALL_SRC. Saltando copia del fondo.${NC}"
+fi
+
 echo ""
 echo -e "${GREEN}🎉 Instalación completada.${NC}"
 echo "Revisa ~/.config para verificar los symlinks creados."
