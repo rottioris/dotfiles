@@ -1,0 +1,1 @@
+/home/rottioris/.local/share/omf/themes/zeit/fish_prompt.fish
