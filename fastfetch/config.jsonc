@@ -4,10 +4,10 @@
     "multithreading": true
   },
     "logo": {
-        "source": "~/.config/fastfetch/Jinx.png",
+        "source": "~/.config/fastfetch/shinji.png",
         "type": "kitty",
         "height": 20,
-        "width": 30,
+        "width": 33,
         "padding": {
             "top": 0,
             "left": 3
