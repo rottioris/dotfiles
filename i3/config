@@ -296,9 +296,10 @@ bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 bindsym $mod+p exec --no-startup-id ~/.config/i3/scripts/audio-device-switch
 
 ## App shortcuts
-#bindsym $mod+w exec --no-startup-id /usr/bin/firefox
+bindsym $mod+Shift+w exec --no-startup-id /usr/bin/firefox
 bindsym $mod+w exec --no-startup-id /usr/bin/zen
 bindsym $mod+n exec --no-startup-id /usr/bin/thunar
+bindsym $mod+c exec --no-startup-id /usr/bin/code-insiders
 bindsym Print exec --no-startup-id scrot ~/%Y-%m-%d-%T-screenshot.png && notify-send "Screenshot saved to ~/$(date +"%Y-%m-%d-%T")-screenshot.png"
 
 # Power Profiles menu switcher (rofi)
@@ -313,7 +314,7 @@ bindsym $mod+Shift+p exec --no-startup-id ~/.config/i3/scripts/power-profiles
 set $ws1 "1:"
 set $ws2 "2:"
 set $ws3 "3:"
-set $ws4 "4:"
+set $ws4 "4:"
 set $ws5 "5:"
 set $ws6 "6:"
 set $ws7 "7:"
@@ -336,15 +337,19 @@ assign [class="(?i)firefox"] $ws1
 assign [class="Thunar"] $ws2
 assign [class="Xfce4-terminal"] $ws3
 assign [class="kitty"] $ws3
+#assign [class="code-insiders"] $ws4
+assign [class="(?i)^code.*insiders$"] $ws4
 # assign [class="thunderbird"] $ws4
 # assign [class="TelegramDesktop"] $ws5
 
 # automatic set focus new window if it opens on another workspace than the current:
 for_window [class=Xfce4-terminal] focus
 for_window [class=kitty] focus
+for_window [class=Thunar] focus
 for_window [class=(?i)zen] focus
 for_window [class=(?i)firefox] focus
-for_window [class=Thunar] focus
+#for_window [class="(?i)code-insiders] focus
+for_window [class="(?i)^code.*insiders$"] focus
 # for_window [class=Thunderbird] focus
 # for_window [class=TelegramDesktop] focus
 
