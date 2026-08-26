@@ -1,0 +1,174 @@
+@import "common"
+
+/* =========================
+   WINDOW
+========================= */
+
+window {
+    width: 640px;
+
+    border: 0px;
+    border-radius: 8px;
+
+    background-color: @bg;
+}
+
+/* =========================
+   MAINBOX
+========================= */
+
+mainbox {
+    enabled: true;
+
+    spacing: 0px;
+    margin: 0px;
+    padding: 0px;
+
+    background-color: @bg;
+
+    children: [
+        "inputbar",
+        "listview"
+    ];
+}
+
+/* =========================
+   INPUT BAR
+========================= */
+
+inputbar {
+    enabled: true;
+
+    padding: 14px 16px;
+    spacing: 10px;
+
+    background-color: @bg-alt;
+    text-color: @fg;
+}
+
+prompt {
+    enabled: true;
+
+    background-color: transparent;
+    text-color: @selected;
+
+    font: "JetBrainsMono Nerd Font Bold 11";
+
+    vertical-align: 0.5;
+    horizontal-align: 0.5;
+}
+
+entry {
+    enabled: false;
+
+    background-color: transparent;
+    text-color: @fg;
+}
+
+/* =========================
+   LISTVIEW
+========================= */
+
+listview {
+    enabled: true;
+
+    columns: 1;
+    lines: 8;
+
+    dynamic: true;
+    fixed-height: false;
+
+    cycle: true;
+    scrollbar: false;
+
+    layout: vertical;
+
+    spacing: 6px;
+
+    margin: 0px;
+    padding: 12px;
+
+    background-color: @bg;
+    text-color: @fg;
+}
+
+/* =========================
+   ELEMENT
+========================= */
+
+element {
+    enabled: true;
+
+    padding: 10px 14px;
+
+    border: 0px;
+    border-radius: 6px;
+
+    background-color: @bg-alt;
+    text-color: @fg;
+
+    cursor: pointer;
+}
+
+element normal.normal {
+    background-color: @bg-alt;
+    text-color: @fg;
+}
+
+element selected.normal {
+    background-color: @selected;
+    text-color: @fg-alt;
+}
+
+/* =========================
+   ELEMENT TEXT
+========================= */
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+
+    font: "JetBrainsMono Nerd Font 11";
+
+    vertical-align: 0.5;
+    horizontal-align: 0.0;
+}
+
+/* =========================
+   MESSAGE
+========================= */
+
+message {
+    enabled: false;
+}
+
+/* =========================
+   TEXTBOX
+========================= */
+
+textbox {
+    background-color: inherit;
+    text-color: inherit;
+}
+
+/* =========================
+   ERROR MESSAGE
+========================= */
+
+error-message {
+    padding: 12px;
+
+    border: 0px;
+    border-radius: 6px;
+
+    background-color: @bg-alt;
+    text-color: @fg;
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+scrollbar {
+    enabled: false;
+}

@@ -1,0 +1,69 @@
+/*
+ * ROFI Base Theme - Snowy
+ * Single source of truth for colors, fonts, and shared styles
+ * Used by: config.rasi (main), menu.rasi (launcher), shortcuts.rasi (help), and custom menus
+ */
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+
+  /* Colors from themes/snowy/colors.toml */
+  bg:        #191c20F2;
+  bg-alt:    #191c20F2;
+  fg:        #a6b5c4FF;
+  fg-alt:    #152037FF;
+  selected:  #a6b5c4FF;
+  active:    #74879fCC;
+  urgent:    #4d617aCC;
+
+  background-color: @bg;
+  text-color:       @fg;
+}
+
+configuration {
+  font: "JetBrainsMono Nerd Font 11";
+  terminal: "alacritty";
+
+  combi { display-name: "󰍜"; }
+  drun  { display-name: "󱓞"; }
+  run   { display-name: ""; }
+  window { display-name: ""; }
+
+  timeout {
+    delay: 10;
+    action: "kb-cancel";
+  }
+
+  filebrowser { display-name: ""; }
+
+  display-drun: "Application:";
+  display-window: "Window:";
+  display-filebrowser: "Files:";
+  case-sensitive: false;
+  sort: true;
+  sorting-method: "fzf";
+  modi: [ "run", "drun", "window", "filebrowser" ];
+  show-icons: true;
+}
+
+window {
+  location: center;
+  anchor: center;
+  fullscreen: false;
+  width: 600px;
+  x-offset: 0px;
+  y-offset: 0px;
+
+  font: "JetBrainsMono Nerd Font 12";
+  enabled: true;
+  margin: 0px;
+  padding: 0px;
+  border: 0px solid;
+  border-radius: 0px;
+  border-color: @selected;
+  cursor: "default";
+  background-color: @bg;
+}

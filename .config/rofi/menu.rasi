@@ -1,0 +1,35 @@
+@import "base"
+
+/*
+ * ROFI Application Launcher Theme (drun/run/window)
+ */
+
+window {
+  width: 640px;
+}
+
+mainbox {
+  children: [ "inputbar", "listview" ];
+}
+
+inputbar {
+  children: [ "prompt", "entry" ];
+}
+
+listview {
+  lines: 10;
+  fixed-height: false;
+}
+
+element {
+  padding: 10px 14px;
+}
+
+element-icon {
+  size: 22px;
+  padding: 0 10px 0 0;
+}
+
+element-text {
+  horizontal-align: 0.0;
+}
