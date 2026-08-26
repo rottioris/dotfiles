@@ -1,0 +1,10 @@
+fresh-editor-bin
+gtk2
+helium-browser-bin
+i3lock-color
+librewolf-bin
+nordic-theme
+papirus-folders-git
+responsively-bin
+spotify
+visual-studio-code-insiders-bin
