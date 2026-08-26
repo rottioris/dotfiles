@@ -1,0 +1,66 @@
+# =========================
+# RENDIMIENTO
+# =========================
+
+set smooth-scroll true
+set scroll-step 80
+set page-padding 1
+set adjust-open width
+
+# =========================
+# UI
+# =========================
+
+set guioptions none
+set statusbar-basename true
+set window-title-basename true
+
+# =========================
+# PORTAPAPELES
+# =========================
+
+set selection-clipboard clipboard
+
+# =========================
+# TEMA
+# =========================
+
+set recolor true
+set recolor-keephue true
+
+# Fondo principal
+set default-bg "#00000000"
+set default-fg "#c8d6e1"
+
+# Recolor
+set recolor-lightcolor "#191c21"
+set recolor-darkcolor "#c8d6e1"
+
+# Barra de estado
+set statusbar-bg "#172138"
+set statusbar-fg "#c8d6e1"
+
+# Barra de input
+set inputbar-bg "#25303d"
+set inputbar-fg "#c8d6e1"
+
+# Barra de notificaciones
+set notification-bg "#394e65"
+set notification-fg "#c8d6e1"
+
+# Highlights
+set highlight-color "#637891"
+set highlight-fg "#191c21"
+
+# Links
+set recolor-reverse-video true
+
+# =========================
+# NAVEGACIÓN
+# =========================
+
+map J navigate next
+map K navigate previous
+map r reload
+map R rotate
+map i recolor
