@@ -1,0 +1,23 @@
+# Yazi config - JetBrainsMono Nerd Font + Dotfiles theme
+
+[manager]
+show_hidden = true
+sort_by = "alphabetical"
+sort_sensitive = false
+sort_reverse = false
+sort_dir_first = true
+linemode = "size_and_mtime"
+ratio = [1, 3, 4]
+
+[preview]
+image = true
+max_width = 600
+max_height = 400
+
+[opener]
+edit = [
+  { run = 'code-insiders "$@"', block = true, desc = "Code", for = "linux" },
+]
+open = [
+  { run = 'xdg-open "$@"', desc = "Open", for = "linux" },
+]
