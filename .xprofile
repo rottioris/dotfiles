@@ -1,0 +1,3 @@
+export XCURSOR_THEME="Nordic-cursors"
+export GTK_THEME="Nordic"
+export GTK_RC_FILES="$HOME/.gtkrc-2.0"
