@@ -1,0 +1,108 @@
+# Snowy Theme - Single Source of Truth
+# All configs should reference these colors
+
+[metadata]
+name = "snowy"
+description = "Minimal cool-toned theme for i3wm + polybar + rofi"
+author = "ori"
+version = "1.0"
+
+[colors]
+# Base backgrounds
+bg = "#191c20"          # Primary background
+bg_alt = "#242f3d"      # Secondary background (panels, menus)
+bg_highlight = "#314256" # Highlight/selection background
+
+# Foregrounds
+fg = "#a6b5c4"          # Primary text
+fg_muted = "#74879f"    # Secondary/muted text
+fg_dim = "#5a6f8a"      # Disabled/dim text
+
+# Accents
+accent = "#5d80a4"      # Primary accent (blue)
+accent_light = "#688db3" # Lighter accent
+accent_dark = "#4e627b"  # Darker accent
+
+# Semantic colors
+success = "#82a893"     # Green
+warning = "#d4b88a"     # Yellow
+error = "#b86870"       # Red
+info = "#7fa4ae"        # Cyan
+purple = "#96829d"      # Magenta
+
+# Terminal ANSI colors (16-color)
+# Normal
+black = "#191b20"
+red = "#b86870"
+green = "#82a893"
+yellow = "#d4b88a"
+blue = "#5d80a4"
+magenta = "#96829d"
+cyan = "#7fa4ae"
+white = "#a6b5c4"
+
+# Bright
+bright_black = "#314256"
+bright_red = "#c5727a"
+bright_green = "#8cb39d"
+bright_yellow = "#dfc293"
+bright_blue = "#688db3"
+bright_magenta = "#a18ca9"
+bright_cyan = "#89b3be"
+bright_white = "#cbd6e2"
+
+# UI specific
+border = "#4d617a"
+focus_border = "#4e627b"
+urgent_border = "#b86870"
+
+# Selection
+selection_bg = "#4e627b"
+selection_fg = "#191c20"
+
+# Polybar specific
+polybar_bg = "#191c20"
+polybar_bg_alt = "#242f3d"
+polybar_fg = "#a6b5c4"
+polybar_border = "#4d617a"
+polybar_module_margin = 2
+
+# Rofi specific
+rofi_bg = "#191c20F2"
+rofi_bg_alt = "#191c20F2"
+rofi_fg = "#a6b5c4FF"
+rofi_selected = "#a6b5c4FF"
+rofi_active = "#74879fCC"
+rofi_urgent = "#4d617aCC"
+
+# Dunst specific
+dunst_low_bg = "#232e39"
+dunst_low_fg = "#899bae"
+dunst_low_frame = "#191b20"
+dunst_normal_bg = "#232e39"
+dunst_normal_fg = "#e3e8ed"
+dunst_normal_frame = "#4e627b"
+dunst_critical_bg = "#232e39"
+dunst_critical_fg = "#b86870"
+dunst_critical_frame = "#b86870"
+
+# Btop specific
+btop_bg = "#1f1f28"
+btop_fg = "#dcd7ba"
+btop_title = "#dcd7ba"
+btop_hi_fg = "#c34043"
+btop_sel_bg = "#223249"
+btop_sel_fg = "#dca561"
+btop_inactive = "#727169"
+btop_proc = "#7aa89f"
+btop_cpu_box = "#727169"
+btop_mem_box = "#727169"
+btop_net_box = "#727169"
+btop_proc_box = "#727169"
+btop_div = "#727169"
+
+# Alacritty specific (from snowy.toml)
+alacritty_bg = "#191c20"
+alacritty_fg = "#a6b5c4"
+alacritty_dim_fg = "#6a7f97"
+alacritty_bright_fg = "#e3e8ed"
