@@ -1,0 +1,75 @@
+[global]
+    monitor = 0
+    follow = mouse
+    width = 350
+    height = (0, 100)
+    origin = top-right
+    offset = (15, 50)
+    scale = 0
+    notification_limit = 5
+    progress_bar = true
+    progress_bar_height = 10
+    progress_bar_frame_width = 0
+    progress_bar_min_width = 150
+    progress_bar_max_width = 300
+    corner_radius = 8
+    indicate_hidden = yes
+    transparency = 25
+    separator_height = 2
+    padding = 14
+    horizontal_padding = 16
+    text_icon_padding = 0
+    frame_width = 2
+    frame_color = "#4e627b"
+    gap_size = 6
+    separator_color = frame
+    sort = yes
+    font = "JetBrainsMono Nerd Font 13"
+    line_height = 0
+    markup = full
+    format = "<span font_desc='JetBrainsMono Nerd Font Bold 14'>%s</span>\n<span font_desc='JetBrainsMono Nerd Font 13'>%b</span>"
+    alignment = left
+    vertical_alignment = center
+    show_age_threshold = 60
+    word_wrap = yes
+    ellipsize = middle
+    ignore_newline = no
+    stack_duplicates = true
+    hide_duplicate_count = false
+    show_indicators = yes
+    icon_position = left
+    min_icon_size = 32
+    max_icon_size = 48
+    icon_path = /usr/share/icons/Adwaita/16x16/status/:/usr/share/icons/Adwaita/16x16/devices/
+    sticky_history = yes
+    history_length = 20
+    dmenu = /usr/bin/rofi -dmenu -p dunst
+    browser = /usr/bin/helium-browser
+    always_run_script = true
+    title = Dunst
+    class = Dunst
+    ignore_dbusclose = false
+    force_xwayland = false
+    force_xinerama = false
+    close = mod4+shift+period
+    close_all = mod4+shift+comma
+    history = mod4+grave
+    context = mod4+shift+grave
+
+[urgency_low]
+    background = "#232e39"
+    foreground = "#899bae"
+    timeout = 6
+    frame_color = "#191b20"
+
+[urgency_normal]
+    background = "#232e39"
+    foreground = "#e3e8ed"
+    timeout = 8
+    frame_color = "#4e627b"
+
+[urgency_critical]
+    background = "#232e39"
+    foreground = "#b86870"
+    timeout = 0
+    frame_color = "#b86870"
