@@ -1,0 +1,82 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+
+  bg: #191c20F2;
+  bg-alt: #191c20F2;
+  fg: #a6b5c4FF;
+  fg-alt: #152037FF;
+  selected: #a6b5c4FF;
+  active: #74879fCC;
+  urgent: #4d617aCC;
+
+  background-color: @bg;
+  text-color: @fg;
+}
+
+configuration {
+  font: "JetBrainsMono Nerd Font 11";
+  terminal: "alacritty";
+  show-icons: false;
+}
+
+window {
+    width: 400px;
+    border-radius: 8px;
+    location: center;
+    anchor: center;
+    background-color: @bg;
+}
+
+mainbox {
+    children: [ inputbar, listview ];
+    background-color: @bg;
+}
+
+inputbar {
+    padding: 14px 16px;
+    spacing: 10px;
+    children: [ prompt ];
+    background-color: @bg-alt;
+}
+
+prompt {
+    background-color: transparent;
+    text-color: @selected;
+    vertical-align: 0.5;
+    horizontal-align: 0.5;
+}
+
+listview {
+    columns: 1;
+    lines: 10;
+    spacing: 6px;
+    padding: 12px;
+    fixed-height: false;
+    fixed-columns: false;
+    dynamic: true;
+    background-color: @bg;
+}
+
+element {
+    padding: 10px 14px;
+    border-radius: 6px;
+    background-color: @bg-alt;
+    text-color: @fg;
+    cursor: pointer;
+}
+
+element selected {
+    background-color: @selected;
+    text-color: @bg;
+}
+
+element-text {
+    horizontal-align: 0.0;
+    font: "JetBrainsMono Nerd Font 11";
+    background-color: transparent;
+    text-color: inherit;
+    cursor: inherit;
+}
