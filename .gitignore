@@ -1,0 +1,13 @@
+*~
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+*.bak
+*.bak~
+.cache/
+*.pid
+
+# secrets
+.config/wireguard/
+*.key

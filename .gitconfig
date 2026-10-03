@@ -1,0 +1,86 @@
+# ~/.gitconfig
+
+[user]
+    name = rottioris
+    email = rottioris@proton.me
+
+[init]
+    defaultBranch = main
+
+[pull]
+    rebase = true
+
+[push]
+    autoSetupRemote = true
+    default = current
+
+[rebase]
+    autoStash = true
+
+[fetch]
+    prune = true
+
+[diff]
+    algorithm = histogram
+    colorMoved = plain
+    mnemonicPrefix = true
+
+[commit]
+    verbose = true
+
+[column]
+    ui = auto
+
+[branch]
+    sort = -committerdate
+
+[tag]
+    sort = -version:refname
+
+[rerere]
+    enabled = true
+    autoupdate = true
+
+[core]
+    editor = nano
+    pager = less -FRX
+    autocrlf = input
+
+[color]
+    ui = auto
+
+[help]
+    autocorrect = prompt
+
+[safe]
+    # dotfiles: symlinked configs may differ in owner between machines
+    directory = *
+
+[alias]
+
+    # básicos
+    st = status
+    ss = status --short
+
+    co = checkout
+    br = branch
+    ci = commit
+
+    # modernos
+    sw = switch
+    rs = restore
+
+    # logs
+    lg = log --graph --decorate --pretty=oneline --abbrev-commit
+    lga = log --graph --all --decorate --oneline
+    lol = log --oneline --graph --decorate
+
+    # commits
+    last = log -1 HEAD
+    amend = commit --amend --no-edit
+
+    # staging
+    unstage = restore --staged .
+
+    # utilidad
+    current = branch --show-current
