@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        :root {
+            --text:    #abb2bf;
+            --bright:  #dde1e7;
+            --muted:   #5c6370;
+            --border:  rgba(255,255,255,0.08);
+
+            --work:    #98c379;
+            --study:   #e06c75;
+            --social:  #61afef;
+            --other:   #d19a66;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--text);
+            display: grid;
+            place-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+            background: #1e222a;
+        }
+
+        /* — background image full page — */
+        .bg {
+            position: fixed;
+            inset: 0;
+            background: url('snowy.jpg') center/cover no-repeat;
+            opacity: .18;
+            z-index: 0;
+        }
+
+        /* — main card — */
+        .card {
+            position: relative;
+            z-index: 1;
+            width: min(880px, 92vw);
+            background: transparent;
+            border-radius: 14px;
+            padding: 52px 56px;
+            animation: fadeUp .55s cubic-bezier(.22,.68,0,1.2) both;
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(18px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        /* — grid 4 cols — */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0 40px;
+        }
+
+        /* — column label — */
+        .col-label {
+            font-size: .7rem;
+            font-weight: 600;
+            letter-spacing: .14em;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--border);
+            animation: fadeUp .55s cubic-bezier(.22,.68,0,1.2) both;
+        }
+
+        .col:nth-child(1) .col-label { color: var(--work);   animation-delay: .08s; }
+        .col:nth-child(2) .col-label { color: var(--study);  animation-delay: .14s; }
+        .col:nth-child(3) .col-label { color: var(--social); animation-delay: .20s; }
+        .col:nth-child(4) .col-label { color: var(--other);  animation-delay: .26s; }
+
+        /* stagger links */
+        .col:nth-child(1) li { animation-delay: .10s; }
+        .col:nth-child(2) li { animation-delay: .16s; }
+        .col:nth-child(3) li { animation-delay: .22s; }
+        .col:nth-child(4) li { animation-delay: .28s; }
+
+        ul { list-style: none; }
+
+        li {
+            margin-bottom: 13px;
+            animation: fadeUp .5s cubic-bezier(.22,.68,0,1.2) both;
+        }
+
+        a {
+            color: var(--text);
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 400;
+            transition: color 160ms ease, letter-spacing 160ms ease;
+        }
+
+        a:hover {
+            color: var(--bright);
+            letter-spacing: .02em;
+        }
+
+        @media (max-width: 640px) {
+            .card { padding: 36px 28px; }
+            .grid { grid-template-columns: repeat(2, 1fr); gap: 32px 28px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="bg"></div>
+
+<div class="card">
+    <div class="grid">
+
+        <div class="col">
+            <p class="col-label">work</p>
+            <ul>
+                <li><a href="https://stackoverflow.com" target="_blank">stackoverflow</a></li>
+                <li><a href="https://github.com/rottioris" target="_blank">github</a></li>
+                <li><a href="https://gitlab.com" target="_blank">gitlab</a></li>
+                <li><a href="https://mail.proton.me" target="_blank">proton</a></li>
+                <li><a href="https://mail.google.com" target="_blank">gmail</a></li>
+            </ul>
+        </div>
+
+        <div class="col">
+            <p class="col-label">study</p>
+            <ul>
+                <li><a href="https://www.freecodecamp.org" target="_blank">freecodecamp</a></li>
+                <li><a href="https://roadmap.sh" target="_blank">roadmap.sh</a></li>
+                <li><a href="https://wiki.archlinux.org" target="_blank">arch wiki</a></li>
+                <li><a href="https://youtube.com" target="_blank">youtube</a></li>
+                <li><a href="https://www.udemy.com" target="_blank">udemy</a></li>
+                <li><a href="https://developer.mozilla.org" target="_blank">mdn</a></li>
+            </ul>
+        </div>
+
+        <div class="col">
+            <p class="col-label">social</p>
+            <ul>
+                <li><a href="https://bsky.app" target="_blank">bluesky</a></li>
+                <li><a href="https://twitter.com/rottioris" target="_blank">twitter</a></li>
+                <li><a href="https://reddit.com" target="_blank">reddit</a></li>
+            </ul>
+        </div>
+
+        <div class="col">
+            <p class="col-label">other</p>
+            <ul>
+                <li><a href="https://haveibeenpwned.com" target="_blank">haveibeenpwned</a></li>
+                <li><a href="https://excalidraw.com" target="_blank">excalidraw</a></li>
+                <li><a href="https://hackthebox.com" target="_blank">hackthebox</a></li>
+                <li><a href="https://tryhackme.com" target="_blank">tryhackme</a></li>
+                <li><a href="https://regex101.com" target="_blank">regex101</a></li>
+                <li><a href="https://ray.so" target="_blank">ray.so</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
