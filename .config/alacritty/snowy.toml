@@ -1,0 +1,78 @@
+[colors.primary]
+background = "#191c20"         # Tu fondo oscuro original
+foreground = "#a6b5c4"         # Tu texto original (Gris azulado suave, nada de blanco)
+dim_foreground = "#6a7f97"     # Texto secundario más apagado
+bright_foreground = "#e3e8ed"  # Resaltados en un tono hielo limpio
+
+[colors.cursor]
+text = "#191c20"
+cursor = "#899bae"
+
+[colors.vi_mode_cursor]
+text = "#191c20"
+cursor = "#4e627b"
+
+[colors.search.matches]
+foreground = "#191c20"
+background = "#4e627b"         # Resaltado de búsqueda integrado
+
+[colors.search.focused_match]
+foreground = "#191c20"
+background = "#899bae"         # Coincidencia activa un poco más clara
+
+[colors.footer_bar]
+foreground = "#a6b5c4"
+background = "#212b35"
+
+[colors.hints.start]
+foreground = "#191c20"
+background = "#899bae"
+
+[colors.hints.end]
+foreground = "#191c20"
+background = "#4e627b"
+
+[colors.selection]
+text = "#191c20"
+background = "#4e627b"         # Bloque de selección sutil que combina con el fondo
+
+# --- COLORES NORMALES (Tu paleta integrada, fría y mate) ---
+[colors.normal]
+black   = "#191b20"
+red     = "#b86870"            # Tonos pastel/apagados para mantener la estética
+green   = "#82a893"
+yellow  = "#d4b88a"
+blue    = "#5d80a4"
+magenta = "#96829d"
+cyan    = "#7fa4ae"
+white   = "#a6b5c4"            # Letras normales en la terminal con tu color preferido
+
+# --- COLORES BRILLANTES (Generan la separación visual sin usar blanco puro) ---
+[colors.bright]
+black   = "#314256"            # Gris claro para comandos de fondo
+red     = "#c5727a"            # Variaciones un paso más claras para que resalten
+green   = "#8cb39d"
+yellow  = "#dfc293"
+blue    = "#688db3"
+magenta = "#a18ca9"
+cyan    = "#89b3be"
+white   = "#cbd6e2"            # Un gris un poco más limpio solo para negritas
+
+# --- COLORES TENUES ---
+[colors.dim]
+black   = "#152037"
+red     = "#314256"
+green   = "#3c5169"
+yellow  = "#4e627b"
+blue    = "#152037"
+magenta = "#212b35"
+cyan    = "#6a7f97"
+white   = "#6a7f97"
+
+[[colors.indexed_colors]]
+index = 16
+color = "#4e627b"
+
+[[colors.indexed_colors]]
+index = 17
+color = "#899bae"

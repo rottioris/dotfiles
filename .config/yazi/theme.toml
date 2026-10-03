@@ -1,0 +1,182 @@
+# Yazi Theme - Dotfiles Palette
+# bg=#191c20 bg_alt=#242f3d fg=#a6b5c4 border=#4d617a
+
+[status]
+separator = " │ "
+
+[status.normal]
+main = { fg = "#191c20", bg = "#a6b5c4", bold = true }
+permissions = { fg = "#4d617a", bg = "#242f3d" }
+size = { fg = "#a6b5c4", bg = "#242f3d" }
+name = { fg = "#a6b5c4", bg = "#242f3d" }
+
+[status.select]
+main = { fg = "#191c20", bg = "#e53935", bold = true }
+permissions = { fg = "#4d617a", bg = "#242f3d" }
+size = { fg = "#a6b5c4", bg = "#242f3d" }
+name = { fg = "#a6b5c4", bg = "#242f3d" }
+
+[status.preview]
+main = { fg = "#191c20", bg = "#5a6f8a", bold = true }
+permissions = { fg = "#4d617a", bg = "#242f3d" }
+size = { fg = "#a6b5c4", bg = "#242f3d" }
+name = { fg = "#a6b5c4", bg = "#242f3d" }
+
+[input]
+border = { fg = "#4d617a" }
+
+[input.active]
+border = { fg = "#a6b5c4" }
+
+[input.title]
+fg = "#a6b5c4"
+
+[input.value]
+fg = "#ffffff"
+
+[select]
+border = { fg = "#4d617a" }
+
+[select.active]
+border = { fg = "#a6b5c4" }
+
+[select.title]
+fg = "#a6b5c4"
+
+[select.option]
+fg = "#a6b5c4"
+
+[select.option_marked]
+fg = "#e53935"
+
+[files]
+dir = { fg = "#5d80a4" }
+file = { fg = "#a6b5c4" }
+link = { fg = "#96829d" }
+exec = { fg = "#82a893" }
+pipe = { fg = "#d4b88a" }
+socket = { fg = "#d4b88a" }
+block_dev = { fg = "#b86870" }
+char_dev = { fg = "#b86870" }
+orphan = { fg = "#b86870" }
+
+[icon]
+dir = { text = "󰉋", fg = "#5d80a4" }
+file = { text = "󰈙", fg = "#a6b5c4" }
+link = { text = "󰌪", fg = "#96829d" }
+orphan = { text = "󱤉", fg = "#b86870" }
+exec = { text = "󰦕", fg = "#82a893" }
+finder = { text = "󰍉", fg = "#d4b88a" }
+hidden = { text = "󰘚", fg = "#5a6f8a" }
+
+[icon.by-name]
+"7z"  = { text = "󰀼", fg = "#d4b88a" }
+zip   = { text = "󰀼", fg = "#d4b88a" }
+tar   = { text = "󰀼", fg = "#d4b88a" }
+gz    = { text = "󰀼", fg = "#d4b88a" }
+bz2   = { text = "󰀼", fg = "#d4b88a" }
+xz    = { text = "󰀼", fg = "#d4b88a" }
+rar   = { text = "󰀼", fg = "#d4b88a" }
+py    = { text = "󰌠", fg = "#82a893" }
+js    = { text = "󰌞", fg = "#d4b88a" }
+ts    = { text = "󰌞", fg = "#5d80a4" }
+tsx   = { text = "󰌞", fg = "#5d80a4" }
+jsx   = { text = "󰌞", fg = "#82a893" }
+rs    = { text = "󱘗", fg = "#b86870" }
+go    = { text = "󰟓", fg = "#5d80a4" }
+c     = { text = "󰙞", fg = "#5d80a4" }
+cpp   = { text = "󰙞", fg = "#5d80a4" }
+h     = { text = "󰙞", fg = "#5d80a4" }
+hpp   = { text = "󰙞", fg = "#5d80a4" }
+java  = { text = "󰬷", fg = "#b86870" }
+sh    = { text = "󱆃", fg = "#82a893" }
+zsh   = { text = "󱆃", fg = "#d4b88a" }
+bash  = { text = "󱆃", fg = "#82a893" }
+lua   = { text = "󰢱", fg = "#5d80a4" }
+vim   = { text = "󰢱", fg = "#82a893" }
+css   = { text = "󰌜", fg = "#5d80a4" }
+scss  = { text = "󰌜", fg = "#b86870" }
+html  = { text = "󰌝", fg = "#d4b88a" }
+json  = { text = "󰘚", fg = "#d4b88a" }
+toml  = { text = "󰅪", fg = "#d4b88a" }
+yaml  = { text = "󰅪", fg = "#d4b88a" }
+yml   = { text = "󰅪", fg = "#d4b88a" }
+xml   = { text = "󰗀", fg = "#d4b88a" }
+md    = { text = "󰍔", fg = "#a6b5c4" }
+txt   = { text = "󰈙", fg = "#a6b5c4" }
+rst   = { text = "󰈙", fg = "#a6b5c4" }
+org   = { text = "󰈙", fg = "#a6b5c4" }
+conf  = { text = "󰒓", fg = "#74879f" }
+lock  = { text = "󰌾", fg = "#5a6f8a" }
+jpg   = { text = "󰈏", fg = "#7fa4ae" }
+jpeg  = { text = "󰈏", fg = "#7fa4ae" }
+png   = { text = "󰈏", fg = "#7fa4ae" }
+gif   = { text = "󰈏", fg = "#7fa4ae" }
+svg   = { text = "󰈏", fg = "#d4b88a" }
+webp  = { text = "󰈏", fg = "#7fa4ae" }
+mp3   = { text = "󰝚", fg = "#7fa4ae" }
+mp4   = { text = "󰈫", fg = "#7fa4ae" }
+mkv   = { text = "󰈫", fg = "#7fa4ae" }
+flac  = { text = "󰝚", fg = "#7fa4ae" }
+wav   = { text = "󰝚", fg = "#7fa4ae" }
+webm  = { text = "󰈫", fg = "#7fa4ae" }
+pdf   = { text = "󰈦", fg = "#b86870" }
+doc   = { text = "󰈬", fg = "#5d80a4" }
+docx  = { text = "󰈬", fg = "#5d80a4" }
+xls   = { text = "󰈭", fg = "#82a893" }
+xlsx  = { text = "󰈭", fg = "#82a893" }
+log   = { text = "󰲪", fg = "#5a6f8a" }
+
+[marks]
+cut = { fg = "#e53935" }
+copy = { fg = "#d4b88a" }
+link = { fg = "#82a893" }
+
+[tab]
+active = { fg = "#191c20", bg = "#a6b5c4", bold = true }
+inactive = { fg = "#74879f", bg = "#242f3d" }
+
+[keymap]
+border = { fg = "#4d617a" }
+
+[keymap.active]
+border = { fg = "#a6b5c4" }
+
+[keymap.title]
+fg = "#a6b5c4"
+
+[keymap.key]
+fg = "#5d80a4"
+
+[keymap.desc]
+fg = "#74879f"
+
+[confirm]
+border = { fg = "#4d617a" }
+
+[confirm.active]
+border = { fg = "#a6b5c4" }
+
+[confirm.title]
+fg = "#a6b5c4"
+
+[confirm.yes]
+fg = "#82a893"
+
+[confirm.no]
+fg = "#e53935"
+
+[pick]
+border = { fg = "#4d617a" }
+
+[pick.active]
+border = { fg = "#a6b5c4" }
+
+[pick.title]
+fg = "#a6b5c4"
+
+[pick.option]
+fg = "#a6b5c4"
+
+[pick.option_marked]
+fg = "#e53935"
