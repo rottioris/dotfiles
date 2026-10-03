@@ -1,0 +1,49 @@
+@import "common"
+
+window {
+    width: 360px;
+    border-radius: 8px;
+}
+
+mainbox {
+    children: [ inputbar, listview ];
+}
+
+inputbar {
+    padding: 14px 16px;
+    spacing: 10px;
+    children: [ prompt ];
+    background-color: @bg-alt;
+}
+
+entry {
+    enabled: true;
+}
+
+prompt {
+    background-color: transparent;
+    text-color: @selected;
+    font: "JetBrainsMono Nerd Font Bold 11";
+    vertical-align: 0.5;
+    horizontal-align: 0.5;
+}
+
+listview {
+    columns: 1;
+    lines: 8;
+    spacing: 6px;
+    padding: 12px;
+    fixed-height: false;
+    fixed-columns: false;
+    dynamic: true;
+}
+
+element {
+    padding: 10px 14px;
+    border-radius: 6px;
+}
+
+element-text {
+    horizontal-align: 0.0;
+    font: "JetBrainsMono Nerd Font 11";
+}
